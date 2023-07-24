@@ -1,0 +1,186 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --white: #eee;
+      }
+
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      .content-container {
+        position: relative;
+        width: 30vw;
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        margin: 0 auto;
+      }
+
+      #showcase-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+      }
+
+      .header-container {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        gap: 30px;
+        color: var(--white);
+        margin-bottom: 40px;
+      }
+
+      .intro-description {
+        color: var(--white);
+        text-align: center;
+      }
+
+      .intro-description h2 {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .services-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        font-weight: bold;
+        color: var(--white);
+      }
+      .button {
+        padding: 20px 60px;
+        border: none;
+        border-radius: 10px;
+        background-color: #50b2ea;
+        color: var(--white);
+        font-size: 20px;
+      }
+
+      .intro-section-container {
+        display: flex;
+        justify-content: center;
+        padding: 20vh 0;
+      }
+
+      .intro-section__content-container {
+        width: 30vw;
+        background-color: #50b2ea;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: var(--white);
+        border-radius: 30px 0 0 30px;
+      }
+
+      .intro-section__content-container h2 {
+        font-weight: bold;
+        font-size: 40px;
+      }
+
+      .intro-section__content-container ul {
+        padding-left: 30px;
+      }
+
+      .intro-section__content-container li {
+        list-style-image: url("./assets/check.png");
+        margin-bottom: 30px;
+      }
+
+      footer {
+        background-color: #50b2ea;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <img src="./assets/showcase.png" alt="tools" id="showcase-img" />
+      <div class="content-container">
+        <header class="header-container">
+          <img src="./assets/Plumbers.png" alt="plumbers" />
+          <h1>
+            Round Rock <br />
+            PLUMBING
+          </h1>
+        </header>
+        <div class="intro-description">
+          <h2>What is Lorem Ipsum</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled
+          </p>
+        </div>
+
+        <ul class="services-container">
+          <li class="service">
+            <img src="./assets/service.png" alt="" />
+            <span>Service one</span>
+          </li>
+          <li class="service">
+            <img src="./assets/service.png" alt="" />
+            <span>Service two</span>
+          </li>
+          <li class="service">
+            <img src="./assets/service.png" alt="" />
+            <span>Service three</span>
+          </li>
+        </ul>
+
+        <button class="button">Help Me</button>
+      </div>
+    </section>
+    <section class="intro-section-container">
+      <div class="intro-section__content-container">
+        <h2>What is Lorem Ipsum</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries
+        </p>
+        <ul>
+          <li>Lorem Ipsum is simply dummy text of the printing</li>
+          <li>Lorem Ipsum is simply dummy text of the printing</li>
+          <li>Lorem Ipsum is simply dummy text of the printing</li>
+        </ul>
+      </div>
+      <img src="./assets/worker.png" alt="worker" />
+    </section>
+    <footer>Contact us at: <a href="#">test@test.com</a></footer>
+  </body>
+</html>
